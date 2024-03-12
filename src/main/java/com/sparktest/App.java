@@ -1,7 +1,5 @@
 package com.sparktest;
 
-import javax.xml.crypto.Data;
-
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.apache.spark.sql.Dataset;
