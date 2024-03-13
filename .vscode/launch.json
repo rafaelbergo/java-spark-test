@@ -5,14 +5,14 @@
             "type": "java",
             "name": "DecisionTree",
             "request": "launch",
-            "mainClass": "com.DecisionTree.DecisionTree",
+            "mainClass": "com.LinearRegression.LinearRegression",
             "projectName": "demo"
         },
         {
             "type": "java",
             "name": "App",
             "request": "launch",
-            "mainClass": "com.DecisionTree.DecisionTree",
+            "mainClass": "com.LinearRegression.LinearRegression",
             "projectName": "demo",
             "args": [],
             "vmArgs": "--add-exports java.base/sun.nio.ch=ALL-UNNAMED"
