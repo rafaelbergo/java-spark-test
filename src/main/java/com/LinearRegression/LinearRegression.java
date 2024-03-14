@@ -17,12 +17,15 @@ public class LinearRegression {
         //dados.show();
         //dados.printSchema();
         //dados.summary().show();
+ 
 
         VectorAssembler assembler = new VectorAssembler()
             .setInputCols(new String[] {"bedrooms", "bathrooms", "sqft_living", "sqft_lot", "sqft_above", "sqft_basement"})
-            .setOutputCol("features");
+            .setOutputCol("features")
+            .setHandleInvalid("skip"); // pula a linha que tiver algum valor nulo
         
         Dataset<Row> dadosFeatures = assembler.transform(dados);
+
         dadosFeatures.show();
         spark.close();
     }
